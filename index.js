@@ -43,7 +43,7 @@ app.post('/', async (req, res) => {
 
 //Connection to MongoDB using mongoose.connect()
 //To secure the DB, used .env to access the DB_URL
-mongoose.connect(process.env.DB_URL, {useNewUrlParser: true, useUnifiedTopology: true}, ()=>{
+mongoose.connect("mongodb+srv://instashot:instashot2020@cluster0.cf8a1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true}, ()=>{
     console.log("connected to DB")
 } )
 
